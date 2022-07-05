@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OsS-Bd-Pez">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CALayer-->
+        <scene sceneID="Qd5-2z-N4f">
+            <objects>
+                <viewController id="IQE-R2-LKf" customClass="CALayerAnimationsViewController" customModule="UIKitAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Gw-vY-qwG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="388-H4-iTg">
+                                <rect key="frame" x="20" y="575" width="374" height="218"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USv-SN-c5P">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="E0z-xC-zn4"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="CABasicAnimation">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="animateView:" destination="Hdn-Qi-2Js" eventType="touchUpInside" id="sxx-1D-314"/>
+                                            <action selector="basicAnimation:" destination="IQE-R2-LKf" eventType="touchUpInside" id="Mi0-Al-vV0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0i-wY-d43">
+                                        <rect key="frame" x="0.0" y="56" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="yGY-13-2Ae"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="CAAnimationDelegate">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="animateWithSprings:" destination="Hdn-Qi-2Js" eventType="touchUpInside" id="Eyd-Ra-yRb"/>
+                                            <action selector="animationDelegate:" destination="IQE-R2-LKf" eventType="touchUpInside" id="gOL-qW-QaP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gut-F1-UbK">
+                                        <rect key="frame" x="0.0" y="112" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="M9d-Il-JGo"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="CAAnimationGroup">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="animateWithTransition:" destination="Hdn-Qi-2Js" eventType="touchUpInside" id="WBf-XN-5zu"/>
+                                            <action selector="animationGroup:" destination="IQE-R2-LKf" eventType="touchUpInside" id="E0u-9V-DS0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7S-k0-9qs">
+                                        <rect key="frame" x="0.0" y="168" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uyJ-gT-pcg"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="@NSManaged">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="animateWithKeyframes:" destination="Hdn-Qi-2Js" eventType="touchUpInside" id="Xij-oQ-BlE"/>
+                                            <action selector="nsmanaged:" destination="IQE-R2-LKf" eventType="touchUpInside" id="UWR-by-V8C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6D-g9-p5u" customClass="ProgressView" customModule="UIKitAnimations" customModuleProvider="target">
+                                <rect key="frame" x="157" y="94" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="zOM-jg-6OV"/>
+                                    <constraint firstAttribute="height" constant="100" id="zUx-jd-Lyp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lOn-Wv-K4l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A6D-g9-p5u" firstAttribute="centerX" secondItem="lOn-Wv-K4l" secondAttribute="centerX" id="0BV-Hg-hrH"/>
+                            <constraint firstItem="lOn-Wv-K4l" firstAttribute="trailing" secondItem="388-H4-iTg" secondAttribute="trailing" constant="20" id="PkJ-K9-0ub"/>
+                            <constraint firstItem="A6D-g9-p5u" firstAttribute="top" secondItem="lOn-Wv-K4l" secondAttribute="top" constant="50" id="cKt-h5-w4D"/>
+                            <constraint firstItem="lOn-Wv-K4l" firstAttribute="bottom" secondItem="388-H4-iTg" secondAttribute="bottom" constant="20" id="hdo-kG-DXr"/>
+                            <constraint firstItem="388-H4-iTg" firstAttribute="leading" secondItem="lOn-Wv-K4l" secondAttribute="leading" constant="20" id="vEq-os-PqW"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="CALayer" image="pencil" catalog="system" id="Z40-LU-3No"/>
+                    <connections>
+                        <outlet property="viewToAnimate" destination="A6D-g9-p5u" id="0NF-fM-XsX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fST-ul-syg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="477"/>
+        </scene>
+        <!--CALayerSubclasses-->
+        <scene sceneID="KPj-JX-urM">
+            <objects>
+                <viewController id="b4Q-Wz-clh" customClass="CALayerSubclassesViewController" customModule="UIKitAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TJt-gx-hkd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="hoZ-xT-BZf">
+                                <rect key="frame" x="20" y="631" width="374" height="162"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaP-Vk-YvD">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="WKO-i5-g6S"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="CAShapeLayer">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="animateView:" destination="Hdn-Qi-2Js" eventType="touchUpInside" id="Gqy-Hb-jJL"/>
+                                            <action selector="basicAnimation:" destination="IQE-R2-LKf" eventType="touchUpInside" id="7Vd-An-v4J"/>
+                                            <action selector="drowShape:" destination="b4Q-Wz-clh" eventType="touchUpInside" id="pGR-KL-c5J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4d-dY-q7v">
+                                        <rect key="frame" x="0.0" y="56" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="day-hV-29h"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="CAGradientLayer">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addGradient:" destination="b4Q-Wz-clh" eventType="touchUpInside" id="5Ri-BO-PTO"/>
+                                            <action selector="animateWithSprings:" destination="Hdn-Qi-2Js" eventType="touchUpInside" id="EO4-xG-0t6"/>
+                                            <action selector="animationDelegate:" destination="IQE-R2-LKf" eventType="touchUpInside" id="Gxq-uv-8ix"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufQ-fo-0Ls">
+                                        <rect key="frame" x="0.0" y="112" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="fhL-dQ-8Cd"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="CAAnimationGroup">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="animateWithTransition:" destination="Hdn-Qi-2Js" eventType="touchUpInside" id="Ok9-C6-Lle"/>
+                                            <action selector="animationGroup:" destination="IQE-R2-LKf" eventType="touchUpInside" id="nfM-11-LNN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDs-Dy-b6c">
+                                <rect key="frame" x="107" y="328.5" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="34Y-Kb-0AG"/>
+                                    <constraint firstAttribute="width" constant="200" id="HGm-ku-Uxk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K5b-42-ZZR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K5b-42-ZZR" firstAttribute="bottom" secondItem="hoZ-xT-BZf" secondAttribute="bottom" constant="20" id="29S-Nh-OqO"/>
+                            <constraint firstItem="K5b-42-ZZR" firstAttribute="trailing" secondItem="hoZ-xT-BZf" secondAttribute="trailing" constant="20" id="DTu-d9-r5Y"/>
+                            <constraint firstItem="KDs-Dy-b6c" firstAttribute="centerY" secondItem="K5b-42-ZZR" secondAttribute="centerY" id="NkL-l4-lA7"/>
+                            <constraint firstItem="hoZ-xT-BZf" firstAttribute="leading" secondItem="K5b-42-ZZR" secondAttribute="leading" constant="20" id="vgr-Qr-KBa"/>
+                            <constraint firstItem="KDs-Dy-b6c" firstAttribute="centerX" secondItem="K5b-42-ZZR" secondAttribute="centerX" id="vvp-Vw-d3h"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="CALayerSubclasses" image="scribble" catalog="system" id="WaE-Kl-CPy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TeU-b3-Hun" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-522" y="961"/>
+        </scene>
+        <!--Animate-->
+        <scene sceneID="YUF-a6-OYy">
+            <objects>
+                <viewController id="Hdn-Qi-2Js" customClass="UIVIewAnimateViewController" customModule="UIKitAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CuC-9t-3Yg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5G-RF-v8d">
+                                <rect key="frame" x="20" y="84" width="374" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="zmt-Kk-pPL">
+                                <rect key="frame" x="20" y="575" width="374" height="218"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmv-ZX-Ta4">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VVf-HP-CYW"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="UIView.animate">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="animateView:" destination="Hdn-Qi-2Js" eventType="touchUpInside" id="xvI-dy-jch"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nU3-E7-Ydx">
+                                        <rect key="frame" x="0.0" y="56" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KSi-Kc-XSh"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Springs">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="animateWithSprings:" destination="Hdn-Qi-2Js" eventType="touchUpInside" id="uaF-Ed-el6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQX-OP-e0A">
+                                        <rect key="frame" x="0.0" y="112" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FLw-2a-1LH"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Transition">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="animateWithTransition:" destination="Hdn-Qi-2Js" eventType="touchUpInside" id="drE-MI-y4U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbW-O0-vrW">
+                                        <rect key="frame" x="0.0" y="168" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="X60-cZ-agp"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Keyframes">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="animateWithKeyframes:" destination="Hdn-Qi-2Js" eventType="touchUpInside" id="kFK-LF-24G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eNz-Xp-n5c"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eNz-Xp-n5c" firstAttribute="trailing" secondItem="U5G-RF-v8d" secondAttribute="trailing" constant="20" id="6hg-A1-Beu"/>
+                            <constraint firstItem="U5G-RF-v8d" firstAttribute="top" secondItem="CuC-9t-3Yg" secondAttribute="top" constant="84" id="WxV-oI-qUK"/>
+                            <constraint firstItem="U5G-RF-v8d" firstAttribute="leading" secondItem="eNz-Xp-n5c" secondAttribute="leading" constant="20" id="cMZ-F0-nNN"/>
+                            <constraint firstItem="eNz-Xp-n5c" firstAttribute="bottom" secondItem="zmt-Kk-pPL" secondAttribute="bottom" constant="20" id="kiE-P3-4Xf"/>
+                            <constraint firstItem="eNz-Xp-n5c" firstAttribute="trailing" secondItem="zmt-Kk-pPL" secondAttribute="trailing" constant="20" id="pxC-oa-Cbe"/>
+                            <constraint firstItem="zmt-Kk-pPL" firstAttribute="leading" secondItem="eNz-Xp-n5c" secondAttribute="leading" constant="20" id="zsA-1X-Bp5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Animate" image="highlighter" catalog="system" id="FBd-TF-2Ay"/>
+                    <connections>
+                        <outlet property="labelLeftInset" destination="cMZ-F0-nNN" id="n1R-1i-bdv"/>
+                        <outlet property="labelRightInset" destination="6hg-A1-Beu" id="dmN-82-tYu"/>
+                        <outlet property="labelTopInset" destination="WxV-oI-qUK" id="twK-mQ-r3m"/>
+                        <outlet property="titleLabel" destination="U5G-RF-v8d" id="7ne-9l-uOz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sxB-xG-q9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368" y="-187"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mf9-YK-ESq">
+            <objects>
+                <tabBarController id="OsS-Bd-Pez" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xdF-AK-Ypx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="tintColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Hdn-Qi-2Js" kind="relationship" relationship="viewControllers" id="x9L-Wv-51R"/>
+                        <segue destination="IQE-R2-LKf" kind="relationship" relationship="viewControllers" id="P79-HE-8cd"/>
+                        <segue destination="b4Q-Wz-clh" kind="relationship" relationship="viewControllers" id="Z20-n1-GPU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5uk-uJ-WFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-521" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="highlighter" catalog="system" width="128" height="119"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="scribble" catalog="system" width="128" height="118"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
